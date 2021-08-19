@@ -1,0 +1,121 @@
+header, section, footer, aside, nav,
+article, figure, figcaption {
+    display: block;}
+body {
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image: url("../images/dark-wood.jpg");
+    background-position: center;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;}
+
+header {
+    height: 160px;
+    background-image: url(../images/header.jpg);
+}
+nav{
+    background-color: #bebdbd;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar__item{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.navbar__item--link{
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+.navbar__item--link.active{
+    color: black;
+}
+.navbar__item--link:hover{
+    
+    color: black;
+}
+/* section{
+    margin: 15px;
+} */
+p{
+    margin: 0;
+}
+figure{
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: 20px;
+
+}
+.content__img{
+    float: left;
+}
+.content{
+    width: 650px;
+    /* float: left; */
+    border-right: 1px solid #ccc;
+}
+footer{
+    float: none;
+}
+.contact{
+    flex: 1;
+    /* width: 290px; */
+}
+.main{
+    /* float: left; */
+    display: flex;
+}
+.content__title h2{
+    margin: 0;
+    padding: 40px 0 5px 0;
+}
+.content__title h4{
+    margin: 0;
+    color: #e74c3c;
+}
+.content__post{
+    display: flex;
+}
+.content__title p{
+    padding: 20px 0 10px 0;
+}
+.contact h2{
+    margin: 0;
+    padding: 40px 0 10px 20px;
+    color: #e74c3c;
+}
+.menu{
+    padding: 0 20px;
+    margin: 0;
+}
+.menu__item{
+    list-style-type: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.menu__item--link{
+    text-decoration: none;
+    color: #f2695b;
+    font-size: 16px;
+}
+.contact p{
+    margin: 0;
+    padding: 3px 0 5px 20px;
+}
+footer{
+    background-color: #bebdbd;
+}
+.footer__p{
+    padding: 10px 20px;
+}
