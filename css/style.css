@@ -519,7 +519,7 @@
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: calc(25% - var(--width-product));
+    width: calc(calc(100% / var(--num-product)) - var(--width-product));
     margin-left: var(--width-product);
     /* padding-right: 15px; */
     /* padding-left: 15px; */
