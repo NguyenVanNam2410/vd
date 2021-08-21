@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    background-color: #fafafa;
+
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.nav,
+.main,
+.footer,
+.header{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin: auto;
+}
+.header__item{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    position: fixed;
+    background-color: #273c75;
+    height: 40px;
+    z-index: 2;
+}
+.logo{
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(219, 210, 210);
+}
+.Trending{
+    line-height: 40px;
+    font-size: 16px;
+    color: rgb(219, 210, 210);
+}
+.header__link{
+    color: #00a8ff;
+}
+.products{
+    padding: 30px 0;
+}
+.products h2{
+    color: #00a8ff;
+    /* padding-bottom: 20px; */
+}
+.products__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+.product__item{
+    width: calc(25% - 20px);
+    margin-left: 20px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    margin-top: 20px;
+    /* border-radius: 20px; */
+}
+.poduct__img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.product__title{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.main{
+    margin-top: 40px;
+    background-color: #192a56;
+}
+.product__title h3{
+    padding: 3px 0;
+}
+.product__title p{
+    padding-top: 3px;
+    font-size: 12px;
+}
+.product__pag--item li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.active{
+    background-color: black;
+}
+.product__pag--item{
+    text-align: center;
+}
+.product__pag--item li a{
+    color: white;
+}
+.active1{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.Trending__song h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #00a8ff;
+}
+.images img{
+    /* margin: 0 auto; */
+    /* margin-left: 415px; */
+    margin-left: 35%;
+}
+.Trending__song p,
+.Trending__song h3{
+    text-align: center;
+    color: rgb(219, 210, 210);
+}
+.Trending__song h3{
+    padding-bottom: 5px;
+}
+.p2{
+    padding: 15px 150px;
+    line-height: 18px;
+    /* padding-top: 15px; */
+}
+.footer{
+    margin-bottom: 15px;
+    display: flex;
+    margin-left: -15px;
+}
+.footer__post{
+    width: calc(calc(100% / 3) - 15px);
+    margin-left: 15px;
+}
+.footer__post h2{
+    color: #00a8ff;
+}
+.footer__post p{
+    color: rgb(219, 210, 210);
+    padding-top: 20px;
+}
+.footer__a{
+    text-decoration: underline;
+}
+.footer__img{
+    margin-top: 10px;
+}
+.footer__item{
+    padding-top: 15px;
+    color: rgb(219, 210, 210);
+}
+.footer__item li{
+    padding: 5px 0;
+}
+.sing__mp3{
+    text-align: center;
+}
+.Trending__song h4{
+    color: rgb(219, 210, 210);
+    text-align: center;
+}
+
+.p{
+    padding: 0 500px;
+}
+.t{
+    padding-top: 20px;
+}
+audio{
+    /* background-color: #ccc; */
+}
