@@ -3,7 +3,9 @@
     font-family: poppins;
 }
 :root{
+    --product__menu--num:3;
     --width-product: 30px;
+    --width-product--list: 30px;
     --num-product: 4;
     --width-icon-header: 18px;
     --white-color:#fff;
@@ -154,4 +156,11 @@ img{
 .SaveFree{
     height: 200px;
     margin-top: 60px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
 }

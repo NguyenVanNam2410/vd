@@ -40,6 +40,7 @@ $('.customer__slider').owlCarousel({
 
 
 $(document).ready(function(){
+    // sản phẩm trang chủ
     $(".product__category--label").click(function(el){
         el.preventDefault();
         var _id = $(this).attr('href');
@@ -49,7 +50,28 @@ $(document).ready(function(){
         $(this).addClass("active");
         $(_id).addClass("active10");
     });
+    $(".product__menu--lable").click(function(el){
+        el.preventDefault();
+        var _id = $(this).attr('href');
+        $(".product__menu--lable").removeClass("active");
+        $(".products1").removeClass("active");
+        $(this).addClass("active");
+        $(_id).addClass("active");
+    });
 
+
+    // tin tức
+    $(".news__links").click(function(el){
+        el.preventDefault();
+        var _id = $(this).attr('href');
+        $(".news__links").removeClass("active__news");
+        $(".news__posts").removeClass("active");
+        $(this).addClass("active__news");
+        $(_id).addClass("active");
+    });
+    
+    
+    //scroll kéo lên 
     $(window).scroll(function(){
         if($(this).scrollTop() > 40){
             $("#arrow").fadeIn();
@@ -60,6 +82,8 @@ $(document).ready(function(){
     $("#arrow").click(function(){
         $('html, body').animate({scrollTop : 0},800);
     });
+    
+    //menu__child 
 
     $(".icon_child").click(function(){
         $(".menu__sidebar").toggleClass('active');
@@ -70,6 +94,33 @@ $(document).ready(function(){
         $(".sidebar").removeClass('active');
         $(".menu__sidebar").removeClass('active');
         $(".icon_child").toggleClass('fa-bars fa-times');
+    });
+
+    // product__category
+    $(".product__hoa--icon").click(function(el){
+        el.preventDefault();
+        $(".product__hoa").toggleClass("active");
+        $(".icon__product").toggleClass("active");
+    })
+    $(".product__hoa--thit").click(function(el){
+        el.preventDefault();
+        $(".product__thit").toggleClass("active");
+        $(".icon__product1").toggleClass("active");
+    })
+    $(".product__search--icon").click(function(el){
+        el.preventDefault();
+        $(".product__active").toggleClass("active");
+        $(this).toggleClass("fa-plus fa-minus");
+    })
+    $(".product__category--icon").click(function(el){
+        el.preventDefault();
+        $(".product__active_1").toggleClass("active");
+        $(this).toggleClass("fa-plus fa-minus");
+    })
+    $(".product__trademark--icon").click(function(el){
+        el.preventDefault();
+        $(".product__active_2").toggleClass("active");
+        $(this).toggleClass("fa-plus fa-minus");
     })
 });
 
@@ -81,14 +132,14 @@ document.addEventListener("DOMContentLoaded",function(){
     // var width_menuChild = menuChild.offsetTop;
     // console.log(width_menuChild);
     var Id__content = document.querySelector("#content");
-    console.log(menuChild);
+    // console.log(menuChild);
     var tt_menu1 = 'duoi26';
     var tt_menu = "duoi205";
 
     window.addEventListener('scroll',function(){
         if(window.pageYOffset > HeightMenu){
             if(tt_menu == 'duoi205'){
-                console.log(menu.classList.add('scroll__menu'))
+                menu.classList.add('scroll__menu');
             }
             tt_menu = 'tren205';
         }else if(window.pageYOffset < HeightMenu){
@@ -110,8 +161,16 @@ document.addEventListener("DOMContentLoaded",function(){
             }
             tt_menu1 = 'duoi26';
         }
-
-
-
     });
 });
+var typed = new Typed(".compare__banner--link",{
+    strings : ["So sánh sản phẩm"],
+    typeSpeed: 200,
+    backSpeed: 60,
+    loop: true
+});
+
+
+
+
+

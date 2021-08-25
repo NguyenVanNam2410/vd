@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="header__system hide-on-mobile">
         <div class="grid wide">
             <div class="header__system--nav">
@@ -98,44 +99,44 @@
                     <ul class="header__navbar--item">
                         <li class="header__navbar--link"><a href="#" class="header__navbar--label">Trang chủ</a></li>
                         <li class="header__navbar--link">
-                            <a href="#" class="header__navbar--label">cửa hàng
+                            <a href="product.html" class="header__navbar--label">cửa hàng
                             <i class="fas fa-caret-down"></i></a>
                             <div class="header__child--item">
                                 <ul class="header__child">
                                     <li class="header__child--post">
-                                        <a href="#" class="header__child--link">Rau-Cu-Qua</a>
+                                        <a href="product.html" class="header__child--link">Rau-Cu-Qua</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Rau-Cu</a>
+                                        <a href="product.html" class="header__child--link">Rau-Cu</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Trái-Cây</a>
+                                        <a href="product.html" class="header__child--link">Trái-Cây</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Nấm</a>
+                                        <a href="product.html" class="header__child--link">Nấm</a>
                                     </li>
                                 </ul>
                                 <ul class="header__child">
                                     <li class="header__child--post">
-                                        <a href="#" class="header__child--link">Thịt-Hải Sản</a>
+                                        <a href="product.html" class="header__child--link">Thịt-Hải Sản</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Thịt</a>
+                                        <a href="product.html" class="header__child--link">Thịt</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Thủy-Hải Sản</a>
+                                        <a href="product.html" class="header__child--link">Thủy-Hải Sản</a>
                                     </li>
                                    
                                 </ul>
                                 <ul class="header__child">
                                     <li class="header__child--post">
-                                        <a href="#" class="header__child--link">Trứng-Gạo</a>
+                                        <a href="product.html" class="header__child--link">Trứng-Gạo</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">Trứng </a>
+                                        <a href="product.html" class="header__child--link">Trứng </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="header__child--link">gạo</a>
+                                        <a href="product.html" class="header__child--link">gạo</a>
                                     </li>
                                 </ul>
                                
@@ -143,16 +144,16 @@
 
                         </li>
                         <li class="header__navbar--link">
-                            <a href="#" class="header__navbar--label">tin tức
+                            <a href="news.html" class="header__navbar--label">tin tức
                                 <i class="fas fa-caret-down"></i>
                             </a>
                             <div class="header__child--news">
                                 <ul class="header__child--newItem">
                                     <li class="header__child--newItem--link">
-                                        <a href="#" class="header__child--newItem--label">Kinh nghiệm chọn thực phẩm</a>
+                                        <a href="news.html" class="header__child--newItem--label">Kinh nghiệm chọn thực phẩm</a>
                                     </li>
                                     <li class="header__child--newItem--link">
-                                        <a href="#" class="header__child--newItem--label">Tin khuyến mãi</a>
+                                        <a href="news.html" class="header__child--newItem--label">Tin khuyến mãi</a>
                                     </li>
                                 </ul>
                             </div>
@@ -162,18 +163,18 @@
                     </ul>
                     <ul class="header__navbar--icon">
                         <li class="header__navbar--icon--label">
-                            <i class="header__nav--icon fas fa-sync-alt">
+                            <a class="header__nav--icon fas fa-sync-alt" href="compare.html">
                                 <div class="header__label--amount">
                                     <label  class="header__label" for="">0</label>
                                 </div>
-                            </i>
+                            </a>
                         </li>
                         <li class="header__navbar--icon--label">
-                            <i class="header__nav--icon fas fa-shopping-basket">
+                            <a class="header__nav--icon fas fa-shopping-basket">
                                 <div class="header__label--amount">
                                     <label  class="header__label" for="">0</label>
                                 </div>
-                            </i>
+                            </a>
                             
                         </li>
                     </ul>
@@ -234,12 +235,39 @@
                                     </p>                                        
                                 </div>
                                 <div class="BigSale__time">
-                                    <div class="demo__time">
-                                        <div class="hour">1</div>
-                                        <div class="hour">2</div>
-                                        <div class="hour">3</div>
-                                        <div class="hour">4</div>
+                                    <div class="demo__time" id="demo">
+
                                     </div>
+                                    <script>
+                                        var countDownDate = new Date("Jan 5, 2022 00:00:00").getTime();
+
+                                        // console.log(countDownDate);
+                                        // cập nhập thời gian sau mỗi 1 giây
+                                        var x = setInterval(function() {
+
+                                            // Lấy thời gian hiện tại
+                                            var now = new Date().getTime();
+
+
+                                            // Lấy số thời gian chênh lệch
+                                            var distance = countDownDate - now;
+
+                                            // Tính toán số ngày, giờ, phút, giây từ thời gian chênh lệch
+                                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                            
+                                            // HIển thị chuỗi thời gian trong thẻ p
+                                            document.getElementById("demo").innerHTML = "<div class=\"hour\">" + days + "<\/div> <div class=\"hour\">" + hours + "<\/div> <div class=\"hour\">" + minutes + "<\/div> <div class=\"hour\">" + seconds + "<\/div>";
+
+                                            // Nếu thời gian kết thúc, hiển thị chuỗi thông báo
+                                            if (distance < 0) {
+                                                clearInterval(x);
+                                                document.getElementById("demo").innerHTML = "Thời gian đếm ngược đã kết thúc";
+                                            }
+                                        }, 1000)
+                                    </script>
                                     <div class="demo__hour">
                                         <div class="time__text">Day</div>
                                         <div class="time__text">Hours</div>
@@ -859,7 +887,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <a href="#" class="btn btn__Product">Load More</a>
+                    <a href="product.html" class="btn btn__Product">Load More</a>
                 </div>
             </div>
         </div>
@@ -1051,58 +1079,6 @@
                                 <h2>photo in instagram</h2>
                                 <div class="footer__heading--bottom"></div>
                             </div>
-                            <!-- <div class="row2 padding">
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col2 l-4 m-4 c-4 ">
-                                    <div class="footer__img">
-                                        <img src="image/footer1.jpg" alt="" srcset=""/>
-                                        <a href="#" class="footer__img-link">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                            </div> -->
-                            
                             <div class="footer__instagram padding">
                                 <div class="footer__instagram--post">
                                     <img class="instagram__img" src="image/footer1.jpg" alt="" srcset="">
@@ -1176,29 +1152,31 @@
             </div>
         </div>
     </div>
+
+    <!-- quantrong -->
     <div id="arrow">
         <i class="fas fa-arrow-up"></i>
     </div>
     <div class="menu__sidebar ">
        
-            <ul class="sidebar">
-                <li>
-                    <a href="#">Trang chủ</a>
-                </li>
-                <li>
-                    <a href="#">Cửa hàng</a>
-                </li>
-                <li>
-                    <a href="#">Tin Tức</a>
-                </li>
-                <li>
-                    <a href="#">Giới thiệu</a>
-                </li>
-                <li>
-                    <a href="#">liên hệ</a>
-                </li>
-            </ul>
-    
+        <ul class="sidebar">
+            <li>
+                <a href="home.html">Trang chủ</a>
+            </li>
+            <li>
+                <a href="product.html">Cửa hàng</a>
+            </li>
+            <li>
+                <a href="news.html">Tin Tức</a>
+            </li>
+            <li>
+                <a href="#">Giới thiệu</a>
+            </li>
+            <li>
+                <a href="#">liên hệ</a>
+            </li>
+        </ul>
+
     </div>
 
     <script src="javascript/jquery-3.6.0.min.js"></script>
