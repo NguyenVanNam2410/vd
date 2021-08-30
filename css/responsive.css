@@ -318,6 +318,46 @@
     .product__menu {
         padding: 5px;
     }
+    .contact__phone, .contact__email, .contact__address {
+        margin-right: 15px;
+        flex: 1;
+        font-size: 1.4rem;
+    }
+    .contact__address--icon {
+        padding-right: 10px;
+        padding-top: 15px;
+        font-size: 1.6rem;
+    }
+    .contact__post {
+        margin: 0;
+        padding: 25px 10px;
+    }
+    iframe{
+        height: 320 !important;
+    }
+    .contact__information--post {
+        margin: 0;
+    }
+    .button2{
+        padding-top: 10px;
+    }
+    .introduct__p {
+        font-size: 1.5rem;
+    }
+    .introduce__img img {
+        width: 100%;
+        height: 100%;
+    }
+    .socials ul li {
+        width: 20px;
+        height: 20px;
+    }
+    .socials ul li a {
+        font-size: 1.2rem;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+    }
 }
 /*mobile*/
 @media ( max-width: 739px){
@@ -463,6 +503,64 @@
     }
     .product__list {
         padding-bottom: 0;
+    }
+    .contact__post {
+        margin: 0;
+        padding: 25px 10px;
+        flex-direction: column;
+    }
+    .contact__phone, .contact__email, .contact__address {
+        margin-left: 15px;
+        /* flex: 1; */
+        display: flex;
+        color: var(--white-color);
+        font-size: 1.4rem;
+    }
+    iframe{
+        height: 320 !important;
+    }
+    .contact__information--post {
+        margin: 0;
+    }
+    .contact__information--post{
+        margin: 0 20px;
+    }
+    .contact__information--post h2 {
+        font-size: 2rem;
+    }
+    .contact__input--lable {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+    .form__contact--ma {
+        font-size: 1.4rem;
+    }
+    .introduce__post h2 {
+        font-size: 1.7rem;
+    }
+    .introduct__p {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    .introduce__img{
+        margin-top: 20px;
+    }
+    .introduce__skill{
+        margin-bottom: 20px;
+    }
+    .skill__smail {
+        font-size: 1.5rem;
+    }
+    .socials ul li a {
+        font-size: 1.3rem;
+        line-height: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    .socials ul li {
+        width: 25px;
+        height: 25px;
     }
 }
 @media ( max-width: 384px){

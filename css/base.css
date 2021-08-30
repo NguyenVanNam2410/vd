@@ -1,6 +1,6 @@
 @font-face{
-    src: url(font/Poppins-SemiBold.ttf);
-    font-family: poppins;
+    src: url(../font/Roboto-Medium.ttf   );
+    font-family: Roboto Slab;
 }
 :root{
     --product__menu--num:3;
@@ -19,6 +19,7 @@
     --display-color: #ccc;
     --style1-color : #fc8a0b;
     --green-color: #b7dc36;
+    --transition--button: all .25s linear;
 }
 *{
     box-sizing: inherit;
@@ -104,6 +105,22 @@ img{
     border: 2px solid var(--green-color);
     background-color: var(--white-color);
     color: var(--green-color);
+}
+.btn2 {
+    padding: 13px 40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    transition: var(--transition--button);
+}
+.btn2:hover{
+    background-color: #f8c11d;
 }
 .btn{
     padding: 13px 25px;
